@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/drawable/bg_white_5.xml" value="0.1" />
+        <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/drawable/bottom_line.xml" value="0.1795" />
         <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/drawable/stroke_light_grey_5.xml" value="0.2975" />
         <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/layout/activity_dashboard.xml" value="0.371875" />
         <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/layout/activity_main.xml" value="0.371875" />
@@ -11,6 +13,7 @@
         <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/layout/fragment_rest_api.xml" value="0.371875" />
         <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/layout/fragment_room.xml" value="0.371875" />
         <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/layout/item_layout_api.xml" value="0.371875" />
+        <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/layout/item_layout_product.xml" value="0.37083333333333335" />
         <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/layout/popup_input.xml" value="0.37083333333333335" />
         <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/menu/nav_menu.xml" value="0.371875" />
       </map>

@@ -1,65 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/bottom_line"
-    android:weightSum="10"
-    android:orientation="horizontal">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <View
-        android:layout_width="1dp"
-        android:layout_height="match_parent"
-        android:background="@color/colorDarkGrey"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_line"
+        android:weightSum="10"
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_weight="3.5"
-        android:gravity="center_vertical"
-        android:paddingStart="10dp"
-        android:paddingEnd="5dp"
-        android:fontFamily="@font/regular"
-        android:textColor="@color/colorDarkGrey"
-        android:textSize="@dimen/_12ssp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorDarkGrey"/>
 
-    <View
-        android:layout_width="1dp"
-        android:layout_height="match_parent"
-        android:background="@color/colorDarkGrey"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3.5"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_12ssp"/>
 
-    <TextView
-        android:id="@+id/price"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_weight="3"
-        android:gravity="center_vertical|end"
-        android:paddingStart="5dp"
-        android:paddingEnd="10dp"
-        android:fontFamily="@font/regular"
-        android:textColor="@color/colorDarkGrey"
-        android:textSize="@dimen/_12ssp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorDarkGrey"/>
 
-    <View
-        android:layout_width="1dp"
-        android:layout_height="match_parent"
-        android:background="@color/colorDarkGrey"/>
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical|end"
+            android:paddingStart="5dp"
+            android:paddingEnd="10dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_12ssp"/>
 
-    <TextView
-        android:id="@+id/date"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_weight="3.5"
-        android:gravity="center_vertical"
-        android:paddingStart="10dp"
-        android:paddingEnd="5dp"
-        android:fontFamily="@font/regular"
-        android:textColor="@color/colorDarkGrey"
-        android:textSize="@dimen/_12ssp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorDarkGrey"/>
 
-    <View
-        android:layout_width="1dp"
-        android:layout_height="match_parent"
-        android:background="@color/colorDarkGrey"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3.5"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/_12ssp"/>
 
-</LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorDarkGrey"/>
+
+    </LinearLayout>
+
+</layout>

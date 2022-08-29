@@ -6,7 +6,9 @@ import com.saadahmedsoft.base.BaseFragment
 import com.saadahmedsoft.base.helper.linearLayoutManager
 import com.saadahmedsoft.base.helper.observe
 import com.saadahmedsoft.base.utils.Constants.Booleans.TRUE
+import com.saadahmedsoft.base.utils.Constants.Errors.NO_INTERNET
 import com.saadahmedsoft.base.utils.DataState
+import com.saadahmedsoft.base.utils.NetworkUtil
 import com.saadahmedsoft.nkgroup_jobassignment.databinding.FragmentRestApiBinding
 import com.saadahmedsoft.nkgroup_jobassignment.services.api.RetroInstance
 import com.saadahmedsoft.nkgroup_jobassignment.view.dashboard.tabs.restApi.adapter.RestApiAdapter
@@ -24,7 +26,12 @@ class RestApiFragment : BaseFragment<FragmentRestApiBinding>(FragmentRestApiBind
 
     override fun onFragmentCreate(savedInstanceState: Bundle?) {
         binding.recyclerView.layoutManager = linearLayoutManager(requireContext())
-        apiViewModel.getDoctors(RetroInstance)
+        if (NetworkUtil.internetAvailable(requireContext())) {
+            apiViewModel.getDoctors(RetroInstance)
+        }
+        else {
+            longSnackBar(NO_INTERNET)
+        }
     }
 
     override fun observeData() {

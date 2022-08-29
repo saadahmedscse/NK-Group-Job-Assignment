@@ -10,12 +10,14 @@ import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.TextView
 import com.saadahmedsoft.base.BaseFragment
+import com.saadahmedsoft.base.helper.linearLayoutManager
 import com.saadahmedsoft.base.helper.onClicked
 import com.saadahmedsoft.base.utils.Constants.Booleans.FALSE
 import com.saadahmedsoft.nkgroup_jobassignment.R
 import com.saadahmedsoft.nkgroup_jobassignment.databinding.FragmentRoomBinding
 import com.saadahmedsoft.nkgroup_jobassignment.services.model.room.Product
 import com.saadahmedsoft.nkgroup_jobassignment.view.dashboard.DashboardActivity
+import com.saadahmedsoft.nkgroup_jobassignment.view.dashboard.tabs.sqLite.adapter.ProductAdapter
 
 class RoomFragment : BaseFragment<FragmentRoomBinding>(FragmentRoomBinding::inflate) {
 
@@ -26,8 +28,28 @@ class RoomFragment : BaseFragment<FragmentRoomBinding>(FragmentRoomBinding::infl
 
     private lateinit var dialog: Dialog
 
+    private val adapter by lazy {
+        ProductAdapter()
+    }
+
+    private var sum = 0.0
+
     override fun onFragmentCreate(savedInstanceState: Bundle?) {
         dialog = Dialog(requireContext())
+
+        binding.recyclerView.layoutManager = linearLayoutManager(requireContext())
+
+        productViewModel.getProducts().observe(this) {
+            sum = 0.0
+            binding.recyclerView.adapter = adapter
+            adapter.addItems(it)
+
+            for (item in it) {
+                sum += item.price
+            }
+
+            binding.total.text = sum.toString()
+        }
 
         binding.btnAdd.onClicked {
             openPopup()
