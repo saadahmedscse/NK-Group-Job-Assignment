@@ -12,7 +12,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class ApiViewModel : ViewModel() {
-    val repo = ApiRepository()
+    private val repo = ApiRepository()
 
     private val mutableLiveData = MutableLiveData<DataState<DoctorResponse>>()
     val liveData: LiveData<DataState<DoctorResponse>>
