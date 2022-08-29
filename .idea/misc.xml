@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/drawable/stroke_light_grey_5.xml" value="0.2975" />
+        <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/layout/activity_dashboard.xml" value="0.371875" />
         <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/layout/activity_main.xml" value="0.371875" />
         <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/layout/dialog_progress.xml" value="0.371875" />
+        <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/layout/fragment_rest_api.xml" value="0.371875" />
+        <entry key="..\:/Documents/Android Studio Projects/NKGroupJobAssignment/app/src/main/res/menu/nav_menu.xml" value="0.371875" />
       </map>
     </option>
   </component>

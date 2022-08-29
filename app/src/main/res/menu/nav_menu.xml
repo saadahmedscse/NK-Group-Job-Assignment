@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/roomFragment"
+        android:icon="@drawable/img_room"
+        android:title="@string/roomFragment" />
+
+    <item
+        android:id="@+id/restApiFragment"
+        android:icon="@drawable/img_api"
+        android:title="@string/restApi" />
+
+</menu>

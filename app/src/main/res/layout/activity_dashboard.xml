@@ -6,4 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".view.dashboard.DashboardActivity">
 
+    <include
+        android:id="@+id/app_toolbar"
+        layout="@layout/app_toolbar" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:layout_constraintTop_toBottomOf="@id/app_toolbar"
+        app:navGraph="@navigation/dashboard_graph" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/nav_menu" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
