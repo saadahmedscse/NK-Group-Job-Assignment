@@ -13,4 +13,6 @@ ext {
     shortIntentVersion = '3.0.0'
     tinyDBVersion = '1.0.0'
     spVersion = '1.0.6'
+    roomVersion = '2.4.2'
+    persistenceRoomVersion = '1.1.1'
 }

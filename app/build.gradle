@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -69,4 +70,10 @@ dependencies {
 
     //Picasso
     implementation 'com.squareup.picasso:picasso:2.8'
+
+    //Room Database
+    implementation "androidx.room:room-ktx:$roomVersion"
+    kapt "androidx.room:room-compiler:$roomVersion"
+    implementation "android.arch.persistence.room:runtime:$persistenceRoomVersion"
+    kapt "android.arch.persistence.room:compiler:$persistenceRoomVersion"
 }

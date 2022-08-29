@@ -28,4 +28,8 @@ class Constants {
         const val UNEXPECTED_ERROR_OCCURRED = "Unexpected error occurred"
         const val NO_INTERNET = "No Internet Connection"
     }
+
+    object Database {
+        const val TABLE_NAME = "NK_Group"
+    }
 }

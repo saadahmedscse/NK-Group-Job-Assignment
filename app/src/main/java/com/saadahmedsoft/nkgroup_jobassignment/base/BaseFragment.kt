@@ -16,6 +16,7 @@ import com.saadahmedsoft.base.utils.Constants.Durations.TOAST_LONG
 import com.saadahmedsoft.base.utils.Constants.Durations.TOAST_SHORT
 import com.saadahmedsoft.base.viewmodel.ToolbarViewModel
 import com.saadahmedsoft.nkgroup_jobassignment.viewmodel.ApiViewModel
+import com.saadahmedsoft.nkgroup_jobassignment.viewmodel.ProductViewModel
 
 abstract class BaseFragment<BINDING: ViewBinding>(
     private val bindingInflater: (inflater: LayoutInflater) -> BINDING
@@ -24,6 +25,7 @@ abstract class BaseFragment<BINDING: ViewBinding>(
     private lateinit var _binding: BINDING
     private val toolbarViewModel by activityViewModels<ToolbarViewModel>()
     val apiViewModel by viewModels<ApiViewModel>()
+    val productViewModel by viewModels<ProductViewModel>()
 
     val binding: BINDING
         get() = _binding
