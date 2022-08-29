@@ -13,8 +13,8 @@ class RestApiAdapter : BaseRecyclerAdapter<Doctor, ItemLayoutApiBinding>() {
 
     @SuppressLint("SetTextI18n")
     override fun onBind(binding: ItemLayoutApiBinding, item: Doctor, position: Int) {
-        binding.department.text = item.department!!.title
-        binding.name.text = item.user!!.firstName + " " + item.user.lastName
+        binding.department.text = item.user!!.phone
+        binding.name.text = item.user.firstName + " " + item.user.lastName
         binding.email.text = item.user.email
         binding.qualification.text = item.specialist
 
