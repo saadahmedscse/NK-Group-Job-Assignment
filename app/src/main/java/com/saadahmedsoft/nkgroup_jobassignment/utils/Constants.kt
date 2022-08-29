@@ -19,4 +19,8 @@ class Constants {
         const val TOAST_SHORT = Toast.LENGTH_SHORT
         const val TOAST_LONG = Toast.LENGTH_LONG
     }
+
+    object Api {
+        const val BASE_URL = "https://topseba.com/api/"
+    }
 }
