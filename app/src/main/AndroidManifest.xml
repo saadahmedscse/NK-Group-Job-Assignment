@@ -13,6 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NKGroupJobAssignment"
         tools:targetApi="31">
+        <activity android:name=".view.dashboard.DashboardActivity"
+            android:exported="false"/>
         <activity
             android:name=".view.splash.SplashActivity"
             android:exported="true">

@@ -6,10 +6,10 @@
     <color name="colorLightGrey">#E6E6E6</color>
     <color name="colorDarkGrey">#202020</color>
     <color name="mode_color">#12112E</color>
-    <color name="home_icon_tint">#00FF7F</color>
+    <color name="home_icon_tint">#00FFA6</color>
     <color name="menu_item_color">#E6E6E6</color>
 
-    <color name="static_main">#00FF7F</color>
+    <color name="static_main">#00FFA6</color>
     <color name="static_white">#FFFFFF</color>
     <color name="static_grey">#5E5E5E</color>
     <color name="static_black">#000000</color>
