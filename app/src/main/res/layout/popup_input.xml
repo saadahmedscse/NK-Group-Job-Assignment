@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_280sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_15sdp"
+    android:background="@drawable/bg_light_grey_5">
+
+    <TextView
+        android:id="@+id/popup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Add new product"/>
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/medium"
+        android:textColor="@color/colorGrey"
+        app:layout_constraintTop_toBottomOf="@id/popup_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_10ssp"
+        android:text="Product name"/>
+
+    <EditText
+        android:id="@+id/et_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@id/tv_product_name"
+        android:background="@drawable/stroke_light_grey_5"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:inputType="text"
+        android:fontFamily="@font/regular"
+        android:hint="Enter product name here"
+        android:textSize="@dimen/_12ssp"/>
+
+    <TextView
+        android:id="@+id/tv_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/medium"
+        android:textColor="@color/colorGrey"
+        app:layout_constraintTop_toBottomOf="@id/et_product_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:textSize="@dimen/_10ssp"
+        android:text="Product price"/>
+
+    <EditText
+        android:id="@+id/et_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@id/tv_product_price"
+        android:background="@drawable/stroke_light_grey_5"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:inputType="number|numberDecimal"
+        android:fontFamily="@font/regular"
+        android:hint="Enter product price here"
+        android:textSize="@dimen/_12ssp"/>
+
+    <TextView
+        android:id="@+id/btn_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/et_product_price"
+        android:background="@drawable/ripple_bg_main_5"
+        android:gravity="center"
+        android:fontFamily="@font/bold"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/colorDarkGrey"
+        android:text="Add Product"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
