@@ -1,6 +1,7 @@
 package com.saadahmedsoft.nkgroup_jobassignment.view.dashboard.tabs.restApi
 
 import android.os.Bundle
+import com.masudranabd.motorcyclefueltracker.utils.ProgressDialog
 import com.saadahmedsoft.base.BaseFragment
 import com.saadahmedsoft.base.helper.observe
 import com.saadahmedsoft.base.utils.Constants.Booleans.TRUE
@@ -23,15 +24,17 @@ class RestApiFragment : BaseFragment<FragmentRestApiBinding>(FragmentRestApiBind
         observe(apiViewModel.liveData) {
             when (it) {
                 is DataState.Loading -> {
-                    //s
+                    ProgressDialog.show(requireContext())
                 }
 
                 is DataState.Success -> {
+                    ProgressDialog.dismiss()
                     longSnackBar(it.data?.msg!!)
                 }
 
                 is DataState.Failed -> {
-                    //s
+                    ProgressDialog.dismiss()
+                    longSnackBar(it.message!!)
                 }
             }
         }

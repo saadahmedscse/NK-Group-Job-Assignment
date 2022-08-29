@@ -8,6 +8,7 @@ import com.saadahmedsoft.nkgroup_jobassignment.services.model.api.DoctorResponse
 
 class ApiRepository {
     suspend fun getDoctors(mutableLiveData: MutableLiveData<DataState<DoctorResponse>>, instance: RetroInstance) {
+        mutableLiveData.postValue(DataState.Loading())
         try {
             val result = instance.getInstance.getDoctors()
 

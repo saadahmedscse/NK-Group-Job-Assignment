@@ -16,7 +16,7 @@ object ProgressDialog {
 
         dialog.setCancelable(false)
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-        dialog.show();
+        dialog.show()
     }
 
     fun dismiss(){
