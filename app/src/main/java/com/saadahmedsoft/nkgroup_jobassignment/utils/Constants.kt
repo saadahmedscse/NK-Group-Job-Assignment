@@ -23,4 +23,9 @@ class Constants {
     object Api {
         const val BASE_URL = "https://topseba.com/api/"
     }
+
+    object Errors {
+        const val UNEXPECTED_ERROR_OCCURRED = "Unexpected error occurred"
+        const val NO_INTERNET = "No Internet Connection"
+    }
 }

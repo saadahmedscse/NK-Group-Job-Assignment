@@ -8,5 +8,5 @@ import retrofit2.http.Headers
 interface APIInterface {
     @Headers("Content-Type: application/json")
     @GET("our-doctors")
-    suspend fun sendNotification() : Response<DoctorResponse>
+    suspend fun getDoctors() : Response<DoctorResponse>
 }
