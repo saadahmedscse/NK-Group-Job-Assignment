@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
 import androidx.viewbinding.ViewBinding
 import com.saadahmedsoft.base.helper.snackBar
 import com.saadahmedsoft.base.helper.toast
@@ -14,6 +15,7 @@ import com.saadahmedsoft.base.utils.Constants.Durations.SNACK_SHORT
 import com.saadahmedsoft.base.utils.Constants.Durations.TOAST_LONG
 import com.saadahmedsoft.base.utils.Constants.Durations.TOAST_SHORT
 import com.saadahmedsoft.base.viewmodel.ToolbarViewModel
+import com.saadahmedsoft.nkgroup_jobassignment.viewmodel.ApiViewModel
 
 abstract class BaseFragment<BINDING: ViewBinding>(
     private val bindingInflater: (inflater: LayoutInflater) -> BINDING
@@ -21,6 +23,7 @@ abstract class BaseFragment<BINDING: ViewBinding>(
 
     private lateinit var _binding: BINDING
     private val toolbarViewModel by activityViewModels<ToolbarViewModel>()
+    val apiViewModel by viewModels<ApiViewModel>()
 
     val binding: BINDING
         get() = _binding
