@@ -20,7 +20,7 @@
             android:exported="false"/>
         <activity
             android:name=".view.splash.SplashActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar.FullScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
